@@ -48,4 +48,5 @@ class TestCalculadora(unittest.TestCase):
 
 
 if __name__ == '__main__':
+    # verbosity -> Exibe todos os testes executados
     unittest.main(verbosity=2)
