@@ -1,25 +1,17 @@
-"""
-1 - Receber um número inteiro
-2 - Saber se o número é multiplo de 3 e 5:
-    Bacon com ovos
-3 - Saber se o número NÃO é multiplo de 3 e 5:
-    Passa fome
-4 - Saber se o número é multiplo somente de 3:
-    Bacon
-5 - Saber se o número é multiplo somente de 5:
-    Ovos
-"""
+import requests
 
-def bacon_com_ovos(n):
-    assert isinstance(n, int), 'n deve ser int'
+class Pessoa:
+    def __init__(self, nome, sobrenome):
+        self.nome = nome
+        self.sobrenome = sobrenome
+        self.dados_obtidos = False
 
-    if n % 3 == 0 and n % 5 == 0:
-        return 'Bacon com ovos'
+    def obter_todos_os_dados(self):
+        resposta = requests.get('')
 
-    if n % 3 == 0:
-        return 'Bacon'
-
-    if n % 5 == 0:
-        return 'Ovos'
-
-    return 'Passar fome'
+        if resposta.ok:
+            self.dados_obtidos = True
+            return 'CONECTADO'
+        else:
+            self.dados_obtidos = False
+            return 'ERRO 404'

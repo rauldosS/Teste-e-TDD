@@ -38,12 +38,29 @@ Geralmente usado de desenvolvedores para desenvolvedores.
 - Refactor
     - Parte 3 -> Melhorar meu código
 
-- [Classe Bacon com ovos](https://github.com/rauldosS/Teste-e-TDD/blob/main/src/baconcomovos.py)
 - [Teste Bacon com ovos](https://github.com/rauldosS/Teste-e-TDD/blob/main/tests/test_baconcomovos.py)
+    - [Classe Bacon com ovos](https://github.com/rauldosS/Teste-e-TDD/blob/main/src/baconcomovos.py)
 
-- [Classe Pessoa](https://github.com/rauldosS/Teste-e-TDD/blob/main/src/Pessoa.py)
 - [Teste Pessoa](https://github.com/rauldosS/Teste-e-TDD/blob/main/tests/test_pessoa.py)
+    - [Classe Pessoa](https://github.com/rauldosS/Teste-e-TDD/blob/main/src/Pessoa.py)
 
-- []()
-- []()
-- []()
+## Executando e organizando testes
+
+```shell
+python -m unittest -v
+```
+- Todos os testes estão no diretório `tests`
+- Todos os arquivos de testes começam com `test_` ou terminam com `_test`
+## MyPy
+
+```shell
+pip install mypy
+```
+
+```shell
+mypy <arquivo>
+```
+
+## Type hints
+
+- [Meu teste](https://github.com/rauldosS/Teste-e-TDD/blob/main/typehints.py)
